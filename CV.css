@@ -1,0 +1,139 @@
+*{
+    
+    box-sizing: border-box;
+}
+.left {
+        background: #000;
+        color: white;
+        padding: 40px 40px;
+    }
+    .partie-gauche{
+        background: #000;
+        color: white;
+        padding: 40px 40px;
+    }
+    .name {
+        font-size: 2.8rem;
+        text-align: center;
+        margin: 0;
+        line-height: 1.2;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid white;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    h2{
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+    h3{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        text-align:start;
+    }
+    .container{
+    display: flex;
+    gap: 20px; /* espace entre les deux sections */
+    align-items: flex-start; 
+    padding: 20px;
+    }
+    .partie-gauche{
+        width: 340px;
+        background: #000;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 100px 10px 10px;
+        border-radius: 20px;
+        flex-shrink: 0;
+    }
+    .centrale {
+    flex: 1;            /* prend toute la place restante */
+    min-width: 0;       /* évite les débordements */
+    display: flex;      
+}
+    .parti_centrale{
+        display: flex;
+        flex: 1;                       /* prend tout l’espace restant */
+        min-width: 0;                 /* évite qu’elle devienne trop étroite */
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        flex-direction: column;
+    }
+    .contact-info div {
+        margin-bottom: 15px;
+    }
+    .contact-info i {
+        margin-right: 10px;
+        width: 20px;
+    }
+    .img_conctact{
+        border-radius: 50%;
+    }
+    .skills, .langues {
+        list-style: none;
+    }
+    .skills li, .langues li {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .stars {
+        color: #969693;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .references {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .ref {
+        background: #f9f9f9;
+        padding: 20px;
+        border-left: 4px solid #000;
+    }
+        @media (max-width: 768px) {
+        .container { grid-template-columns: 1fr; }
+        .left { padding: 40px 30px; }
+    }
+    .argu_centrale{
+        font-size: 30px;
+        color: rgb(148, 156, 164);
+    }
+    .caracter{
+        color: rgb(137, 152, 167);
+    }
+    /* Optionnel : petite amélioration mobile */
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .partie-gauche {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .centrale {
+        padding: 20px;
+    }
+}

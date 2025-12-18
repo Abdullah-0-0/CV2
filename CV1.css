@@ -1,0 +1,115 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        padding: 40px 20px;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1.2fr 2fr;
+    }
+    /* === COLONNE GAUCHE (noire) === */
+    .left {
+        background: #000;
+        color: white;
+        padding: 50px 40px;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid white;
+        margin-bottom: 30px;
+    }
+    .name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .title {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 40px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h3 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .contact-info div {
+      margin-bottom: 15px;
+    }
+    .contact-info i {
+      margin-right: 10px;
+      width: 20px;
+    }
+    .skills, .langues {
+      list-style: none;
+    }
+    .skills li, .langues li {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .stars {
+      color: #ffd700;
+    }
+
+    /* === COLONNE DROITE (blanche) === */
+    .right {
+      padding: 50px 40px;
+    }
+    .right h2 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+    .experience, .education {
+      margin-bottom: 40px;
+    }
+    .job {
+      margin-bottom: 25px;
+    }
+    .job h4 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+    .job span {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .job ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .references {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .ref {
+      background: #f9f9f9;
+      padding: 20px;
+      border-left: 4px solid #000;
+    }
+
+    @media (max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+      .left { padding: 40px 30px; }
+    }
